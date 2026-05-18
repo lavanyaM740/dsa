@@ -1,0 +1,23 @@
+marks = [35, 42, 50, 61, 78, 85, 90]
+target = 78
+
+start = 0
+end = len(marks) - 1
+steps = 0
+
+while start <= end:
+
+    steps += 1
+
+    middle = (start + end) // 2
+
+    if marks[middle] == target:
+        print("Marks found at index", middle)
+        print("Steps taken:", steps)
+        break
+
+    elif target > marks[middle]:
+        start = middle + 1
+
+    else:
+        end = middle - 1
