@@ -1,0 +1,9 @@
+roll_numbers = [101, 102, 103, 104, 105]
+target = 104
+
+for index in range(len(roll_numbers)):
+    
+    # Check if the current roll number matches the target
+    if roll_numbers[index] == target:
+        print("Roll number found at index", index)
+        break
